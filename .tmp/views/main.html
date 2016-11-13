@@ -6,6 +6,6 @@
 </div>
 <div class="row marketing">
   <ul>
-    <li ng-repeat="x in progect.member"><a ng-href="#">{{x.name}}</a></li>
+    <li ng-repeat="x in project.member" ng-click="project.selectFn($even,x)"><a ng-href="#">{{x.name}}</a></li>
   </ul>
 </div>
