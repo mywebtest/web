@@ -8,10 +8,23 @@
  * Controller of the webApp
  */
 angular.module('webApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MainCtrl', function ($scope) {
+    $scope.progect={
+      member:[{
+        'id':'0',
+        'name':'books'
+      },{
+        'id':'1',
+        'name':'label'
+      },{
+        'id':'3',
+        'name':'fixBook'
+      },{
+        'id':'4',
+        'name':'dist'
+      },{
+        'id':'5',
+        'name':'bigBody'
+      }]
+    }
   });
