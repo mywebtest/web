@@ -9,5 +9,5 @@
     span.glyphicon.glyphicon-ok
 .row.marketing
   ul
-    li(ng-repeat='x in progect.member')
+    li(ng-repeat='x in project.member' ng-click='project.selectFn($even,x)')
       a(ng-href='#') {{x.name}}

@@ -9,7 +9,8 @@
  */
 angular.module('webApp')
   .controller('MainCtrl', function ($scope) {
-    $scope.progect={
+    $scope.project={
+      arr:[],
       member:[{
         'id':'0',
         'name':'books'
@@ -25,6 +26,10 @@ angular.module('webApp')
       },{
         'id':'5',
         'name':'bigBody'
-      }]
+      }],
+      selectFn:function($even,obj){
+        this.arr.push(obj);
+        console.log(this.arr);
+      }
     }
   });
